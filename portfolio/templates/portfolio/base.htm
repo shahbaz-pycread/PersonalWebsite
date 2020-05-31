@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mohammad Shahbaz Alam</title>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/1aff04e36a.js"></script>
+    <!-- TailWind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class=" body bg-teal-500">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-700 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            
+            <a href="{% url 'home' %}">
+                <span class="font-semibold text-xl tracking-tight pl-4">Mohammad Shahbaz Alam</span>
+            </a>
+        </div>
+        
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                
+                
+                <a href="{% url 'contact' %}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                    Contact
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/mohammad-shahbaz-alam-86483761" class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">LinkedIn</a>
+            
+            
+                <a href="https://github.com/shahbaz-pycread" class="inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Github</a>
+            </div>
+            
+        </div>
+    </nav>
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>© 2020 Shahbaz — <a href="http://twitter.com/cutealam" target="_blank">@cutealam</a></p>
+    </div>
+        
+</body>
+</html>

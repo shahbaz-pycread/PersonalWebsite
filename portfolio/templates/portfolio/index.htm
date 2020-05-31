@@ -1,0 +1,46 @@
+{% extends 'portfolio/base.htm' %}
+{% load static %}
+
+{% block content %}
+    <div class="container profile flex flex-row">
+        <div class="mt-20 ml-20">
+            <img class=" h-48 w-48 mx-auto rounded-full" src="{% static 'img/tapo.jpg' %}">
+        </div>
+        <div class="intro mt-20 w-1/2 text-justify  ml-10">
+            <h2 class="text-white text-3xl underline font-serif">About Me</h2>
+            <p class="text-base text-pink-800 tracking-wide font-serif text-xl">I am Mohammad Shahbaz Alam. I am a graduate with a degree in Computer Science and Engineering. I have a total experience
+                of more than 4 years in Software Development.</p>
+        </div>
+    </div>
+    <div class="container mx-auto flex">
+    
+    
+        <div class="intro mt-20 flex-auto ml-4">
+            <h2 class="text-white text-3xl underline font-serif">Certification</h2>
+            <ul class="list-disc">
+                <li class="text-pink-800">
+                    <a class="hover:underline text-pink-800 hover:text-white text-xl" href="https://www.datacamp.com/statement-of-accomplishment/course/a654bad4cafd97ec19d7c5ffa3defcd21bf611ca#!">Introduction to Python</a>
+                </li>
+                <li class="text-pink-800">
+                    <a class="hover:underline text-pink-800 hover:text-white text-xl" href="https://app.dataquest.io/view_cert/3QYHY1CZUPF7U7IKNCSP/">Python For Data Science:Fundamentals</a>
+                </li>
+                <li class="text-pink-800">
+                    <a class="hover:underline text-pink-800 hover:text-white text-xl" href="https://www.datacamp.com/statement-of-accomplishment/course/1dd9388a487e137af18be63acfaaf6fc66f9cbef">Introduction to SQL</a>
+                </li>
+    
+            </ul>
+        </div>
+        <div class="intro mt-20 flex-1 ml-4">
+            <h2 class="text-white text-3xl underline font-serif ">Stacks</h2>
+            <ul class=" list-disc ">
+    
+                <li class="text-pink-800 text-xl">Python | Django</li>
+                <li class="text-pink-800 text-xl">Php | Laravel</li>
+    
+    
+            </ul>
+        </div>
+    
+    </div>
+
+{% endblock %}
